@@ -1,0 +1,10 @@
+[nix]
+channel = "stable-23_05"
+
+[packager]
+ignoredPaths = [".*", "venv"]
+
+[deployment]
+run = ["python3", "sinyal.py"]
+start = ["python3", "sinyal.py"]
+hidden = ["TELEGRAM_TOKEN", "GEMINI_API_KEY"]
